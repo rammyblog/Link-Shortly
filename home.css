@@ -1,0 +1,305 @@
+*{
+	border: 0;
+
+	margin: 0
+}
+
+body{
+	font-size: 18px;
+	color: hsl(257, 7%, 63%);
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px
+}
+
+.container-footer{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+
+}
+
+nav{
+	display: grid;
+	grid-auto-flow: column; 
+}
+
+
+
+.main-nav, .account-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-weight: 700
+
+}
+
+.main-nav li{
+	float: left;
+
+}
+
+.account-nav li{
+	float: right;
+}
+
+.main-nav{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+
+
+}
+
+.account-nav {
+	gap: 26px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.btn {
+	padding: 7px 12px;
+	font-size: 18px;
+	white-space: nowrap;
+	border-radius: 18px;
+	margin-bottom: 0;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 900
+}
+.btn-info{
+	background-color: hsl(180, 66%, 49%);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700
+}
+
+.btn-short{
+	border-radius: 6px;
+	font-weight: 700;
+}
+
+.wrapper{
+	position: relative;
+	margin-top: 4rem;
+}
+
+.intro {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 100px;
+}
+.intro-image{
+	width: 100%
+}
+.intro-image img{
+	width: 100%
+}
+
+.intro-text > h1 {
+	font-size: 50px;
+	color: hsl(260, 8%, 14%);
+	font-weight: 700
+}
+
+.intro-text h4{
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+.shorten-box {
+	width: auto;
+	height: 120px;
+	background-color: hsl(255, 11%, 22%);
+	background-image: url(./images/bg-shorten-desktop.svg);
+	position: absolute;
+	width: 100%;
+	top: 23rem;
+	border-radius: 10px;
+	/* bottom: 10px; */
+}
+.input-box {
+	display: flex;
+	padding: 45px 60px;
+	gap: 11px;
+}
+
+.input-box input{
+	display: block;
+	width: 100%;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+	color: #495057;
+	padding: .375rem .75rem;
+	border-radius: .25rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.site-features {
+	background-color: #F0F1F6;
+	padding-bottom: 6rem;
+}
+
+.feature-text-header {
+	padding-top: 184px;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 50px
+}
+
+.feature-text-header h2{
+	color: #000;
+}
+.feature-text-header p{
+	font-weight: 700;
+}
+
+.card-row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+	background-color: #fff;
+	margin: 20px 10px;
+	padding: 20px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.card-icon {
+	width: 70px;
+	border-radius: 50%;
+	background-color: hsl(257, 27%, 26%);
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 85%;
+}
+
+.card-title{
+	padding-top: 28px;
+	color: #000;
+	font-weight: 900;
+	margin-bottom: 10px
+
+
+}
+
+.card-two {
+	position: relative;
+	top: 1.2rem;
+}
+
+.card-three {
+	/* margin-top: 100px; */
+	position: relative;
+	top: 47px;
+}
+
+.card-section{
+	position: relative;
+	margin-bottom: 50px;
+}
+
+hr {
+	border-top: 10px solid hsl(180, 66%, 49%);
+	bottom: 88px;
+	position: relative;
+	left: 17.7rem;
+}
+
+.boost-links {
+	background-color: hsl(255, 11%, 22%);
+	background-image: url(./images/bg-boost-desktop.svg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 5rem;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.boost-links-content h2{
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+footer {
+	background-color: hsl(260, 8%, 14%);
+	color: #fff;
+	padding: 5rem;
+}
+
+.footer-links p{
+	font-weight: 700
+}
+.footer-links ul, .social-media ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+.footer-links li {
+	padding: 10px 0;
+	color: hsl(0, 0%, 75%);
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.footer-links li, .social-media li{
+	list-style: none;
+}
+
+.social-media li{
+	float: left;
+	padding: 8px;
+}
+
+svg {
+  fill: #fff;
+}
+
+.footer-grid{
+	display: grid;
+	grid-template-columns: 2fr 1.5fr 1fr 1fr 1.5fr;
+	gap: 30px 
+}
+
+
+@media (min-width: 992px) {
+    .container, .container-footer {
+        width: 970px;
+     }
+}
+
+@media (max-width: 990px) {
+	.card-row{
+		display: block;
+
+	}
+}
