@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-footer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 992px) {
+  .container,
+  .container-footer {
+    width: 970px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .intro {
+    grid-auto-flow: row;
+    grid-template-columns: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .intro-text {
+    order: 2;
+  }
+
+  .shorten-box {
+    top: 108%;
+  }
+
+
+
+  .feature-text-header {
+    width: auto;
+
+    font-size: 16px;
+  }
+
+  .card {
+    margin: 50px 10px;
+  }
+
+  .card-row {
+    display: block;
+  }
+
+  .card-icon {
+    left: 40%;
+  }
+  .vl {
+    border-left: 10px solid hsl(180, 66%, 49%);
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 100%;
+    /* bottom: 49%; */
+    height: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: none;
+
+    text-align: center;
+  }
+  .social-media ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 }
