@@ -25,7 +25,7 @@ SECRET_KEY = 'xz039(sqm$&q^k42z5a&f$d^6$k^$a*ljy#w4)^jgs)m#$tq*v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['linkshortly.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'linkshortly.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+              'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,3 +132,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CORS_ORIGIN_ALLOW_ALL = True
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'build/static')
+]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+if 'DATABASE_URL' in os.environ:
+    import dj_database_url
+    
+    DATABASES = {'default': dj_database_url.config()}
