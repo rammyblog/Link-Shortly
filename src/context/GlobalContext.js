@@ -22,7 +22,7 @@ export const GlobalProvider = ({ children }) => {
 
     // Actions
     async function shortenUrl(longUrl) {
-        await axios.post('http://127.0.0.1:8000/short/', {
+        await axios.post('https://linkshortly.herokuapp.com/api/short/', {
             user_url: longUrl,
         }).then(
             res => {
