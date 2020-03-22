@@ -35,6 +35,9 @@ body{
 	font-size: 18px;
 	font-weight: 700
 }
+.btn-info:hover {
+	background-color: ${({ theme }) => theme.secondaryHover};
+  }
 
 .btn-short{
 	border-radius: 6px;

@@ -6,8 +6,9 @@ export default function ShortenedUrl({urls}) {
             <div className="urlshort-link-box">
                 <div className="long-link-box">
                     <a href={urls.user_url}>{urls.user_url}</a>
+                <hr className='inline-hr' />
                 </div>
-                <hr></hr>
+
                 <div className="short-link-box">
 
                     <a href={urls.short_url}>{window.location.href}{urls.short_url}</a>

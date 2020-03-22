@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import BoostLogo from '../../assets/images/bg-boost-desktop.svg';
+import BoostLogoMobile from '../../assets/images/bg-boost-mobile.svg';
 
 
-export const BoostLinksStyled = styled.div `
+
+export const BoostLinksStyled = styled.div`
 .boost-links {
 	background-color: hsl(255, 11%, 22%);
 	background-image: url(${BoostLogo});
@@ -14,6 +16,7 @@ export const BoostLinksStyled = styled.div `
 	color: #fff;
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .boost-links-content h2{
@@ -22,5 +25,17 @@ export const BoostLinksStyled = styled.div `
 	font-size: 1.8rem;
 }
 
+@media(max-width: ${({ theme }) => theme.mobile}){
 
-`
+		.boost-links {
+			margin-top: 5rem;
+			background-image: url(${BoostLogoMobile});
+
+		}
+
+	  }
+	
+	
+
+
+`;

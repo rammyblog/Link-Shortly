@@ -38,3 +38,15 @@ nav{
 	align-items: center;
 }
 
+.mobile-image{
+	display: none;
+}
+
+
+@media (max-width: 700px ) {
+
+	.mobile-image{
+		display: block;
+	}
+
+  }

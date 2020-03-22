@@ -7,5 +7,6 @@ export const theme = {
     neutralDarkBlue: 'hsl(255, 11%, 22%)',
     neutralDarkViolet: 'hsl(260, 8%, 14%)',
     primaryHover: '#343078',
+    secondaryHover: '#9DE1E0',
     mobile: '700px',
   }

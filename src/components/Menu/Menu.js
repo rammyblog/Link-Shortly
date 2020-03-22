@@ -5,7 +5,8 @@ import logo from '../../assets/images/logo.svg'
 export default function MenuComponent({ open }) {
   return (
     <>
-      
+      <img class='mobile-image' src={logo} /> 
+
         <StyledMenu>
           <nav>
 
@@ -24,18 +25,17 @@ export default function MenuComponent({ open }) {
 
         </StyledMenu>
       <StyledMobileMenu open={open}>
-        <a href="/">
-          <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
-          About us
-      </a>
-        <a href="/">
-          <span role="img" aria-label="price">&#x1f4b8;</span>
-          Pricing
-        </a>
-        <a href="/">
-          <span role="img" aria-label="contact">&#x1f4e9;</span>
-          Contact
-        </a>
+
+        <ul class="main-nav">
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Resources</li>
+            </ul>
+            <hr className='nav-divider' />
+            <ul class="account-nav">
+              <li>Login</li>
+              <li><button class="btn btn-info">Sign Up</button></li>
+            </ul>
 
       </StyledMobileMenu>
     </>

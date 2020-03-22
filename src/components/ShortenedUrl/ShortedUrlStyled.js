@@ -19,7 +19,7 @@ export const ShortenedUrlStyles = styled.div`
 }
 
 
-hr{
+.inline-hr{
     display: none
 }
 
@@ -31,27 +31,32 @@ hr{
 
  .short-link-box a {
 	color: hsl(180,66%,49%);
-
 	text-decoration: none;
 	padding-right: 13px;
 }
 
-@media(max-width: ${({theme}) => theme.mobile}){
+@media(max-width: ${({ theme }) => theme.mobile}){
 
     .urlshort-link-box {
-
         flex-direction: column;
+        align-items: flex-start;
+    }
+    .long-link-box{
+       border-bottom : 1px solid ${({ theme }) => theme.neutralGray}; 
+       padding-bottom: 1rem;
+       width: 100%
+    }
 
-    }
-    hr{
-        display: block;
-        border-top: 2px solid ${({theme}) => theme.secondaryRed}
-    }
     
+    .short-link-box{
+        padding-bottom: 1rem
+     }
     
-    .btn-info{
+     .btn-info {
         text-align: center;
         width: 100%;
+        margin-top: 15px;
+        border-radius: 5px;
     }
 
 

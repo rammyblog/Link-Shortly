@@ -16,6 +16,7 @@ export const IntroHeader = styled.div`
 }
 
 .intro-text > h1 {
+
 	font-size: 50px;
 	color: hsl(260, 8%, 14%);
 	font-weight: 700
@@ -32,7 +33,9 @@ export const IntroHeader = styled.div`
 	.intro {
 		grid-auto-flow: row;
 		grid-template-columns: none;
-		margin-bottom: 100px
+		margin-bottom: 100px;
+		text-align: center
+
 	  }
 	
 	  .intro-text {
@@ -40,6 +43,8 @@ export const IntroHeader = styled.div`
 	  }
 
 	  .intro-text > h1 {
+		  padding-top: 5rem;
+
 		font-size: 3rem;
 
 	}

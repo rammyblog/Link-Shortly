@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import shortenBoxBackgroundLogo from '../../assets/images/bg-shorten-desktop.svg';
+import shortenBoxBackgroundMobileLogo from '../../assets/images/bg-shorten-mobile.svg';
+
 
 
 export const ShortenBoxInput = styled.div`
@@ -51,6 +53,10 @@ export const ShortenBoxInput = styled.div`
 	  .shorten-box {
 		top: 95%;
 	  }
+
+	  .btn-short{
+		  margin-top: 1rem;
+	  }
 	
 	.input-box input{
 		  width: auto
@@ -64,5 +70,14 @@ export const ShortenBoxInput = styled.div`
 		flex-direction: column;
 		text-align: center;
 	  }
+
+	  .shorten-box {
+		background-image: url(${shortenBoxBackgroundMobileLogo});
+		background-repeat: no-repeat;
+		object-fit: cover;
+		background-size: cover;
+	
+	}
+	}
 }
 `;
