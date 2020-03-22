@@ -10,6 +10,7 @@ import Intro from './components/IntroHeading/Intro';
 import ShortenBox from './components/shorten-box/ShortenBox';
 import SiteFeatures from './components/SiteFeaturesSection/SiteFeatures';
 import Footer from './components/footer/Footer';
+import {GlobalProvider} from './context/GlobalContext';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   useOnClickOutside(node, () => setOpen(false));
   return (
     <ThemeProvider theme={theme}>
-      <>
+      <GlobalProvider>
         <GlobalStyles />
         <div className='container'>
           <div ref={node}>
@@ -35,7 +36,7 @@ function App() {
         </section>
           <SiteFeatures />
           <Footer />
-      </>
+      </GlobalProvider>
     </ThemeProvider>
   );
 }
