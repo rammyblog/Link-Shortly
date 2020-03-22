@@ -71,6 +71,7 @@ export const StyledMobileMenu = styled.nav`
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
+      width: 100%;
    
     }
 
