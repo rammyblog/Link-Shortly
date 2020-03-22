@@ -1,0 +1,52 @@
+nav{
+	display: grid;
+	grid-auto-flow: column; 
+}
+
+
+
+.main-nav, .account-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-weight: 700
+
+}
+
+.main-nav li{
+	float: left;
+
+}
+
+.account-nav li{
+	float: right;
+}
+
+.main-nav{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+
+
+}
+
+.account-nav {
+	gap: 26px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.mobile-image{
+	display: none;
+}
+
+
+@media (max-width: 700px ) {
+
+	.mobile-image{
+		display: block;
+	}
+
+  }
