@@ -38,4 +38,5 @@ class LinkViewSet(viewsets.ModelViewSet, UrlShortner):
 
 def retrieve_and_redirect(request, short_url):
     queryset = get_object_or_404(Link, short_url=short_url)
+    print(queryset)
     return redirect(queryset.user_url)

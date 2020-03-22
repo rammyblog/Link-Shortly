@@ -4,7 +4,7 @@ export default function ShortenedUrl({ urls }) {
     const textAreaRef = useRef(null);
     const [copySuccess, setCopySuccess] = useState('Copy');
 
-    const completeShortUrl = window.location.href + urls.short_url;
+    const completeShortUrl = window.location.href + 'l/' + urls.short_url +'/';
     useEffect(() => {
         setInterval(() => {
             setCopySuccess('Copy');
@@ -35,7 +35,7 @@ export default function ShortenedUrl({ urls }) {
 
                 <div className="short-link-box">
 
-                    <a href={urls.short_url}>{window.location.href}{urls.short_url}</a>
+                    <a href={completeShortUrl}>{completeShortUrl}</a>
                     <textarea
                         ref={textAreaRef}
                         value={completeShortUrl}
