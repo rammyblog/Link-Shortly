@@ -2,6 +2,7 @@ import React from 'react';
 import { bool } from 'prop-types';
 import { StyledMenu, StyledMobileMenu } from './Menu.styled';
 import logo from '../../assets/images/logo.svg'
+import './menu.css';
 export default function MenuComponent({ open }) {
   return (
     <>
