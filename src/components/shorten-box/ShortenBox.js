@@ -1,7 +1,6 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import { ShortenBoxInput } from './ShortenBoxStyled';
 import { GlobalContext } from '../../context/GlobalContext';
-import {useDidUpdate} from '../../hooks';
 
 export default function ShortenBox() {
     const [LongUrl, setLongUrl] = useState('');

@@ -6,13 +6,13 @@ import './Menu.css';
 export default function MenuComponent({ open }) {
   return (
     <>
-      <img class='mobile-image' src={logo} /> 
+      <img class='mobile-image' src={logo} alt='mobile-logo' /> 
 
         <StyledMenu>
           <nav>
 
             <ul class="main-nav">
-              <li><img src={logo} /> </li>
+              <li><img src={logo} alt='logo'/> </li>
               <li>Features</li>
               <li>Pricing</li>
               <li>Resources</li>
