@@ -12,7 +12,7 @@ export default function Intro() {
                     <button class="btn btn-info">Get Started</button>
                 </div>
                 <div class="intro-image">
-                    <img src={working_logo} />
+                    <img src={working_logo} alt='Intro-logo' />
                 </div>
             </section>
         </IntroHeader>

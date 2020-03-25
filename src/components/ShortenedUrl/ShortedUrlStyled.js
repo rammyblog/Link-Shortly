@@ -54,6 +54,7 @@ export const ShortenedUrlStyles = styled.div`
     
     .short-link-box{
         padding: 1rem 0;
+        margin-right: 1rem;
      }
     
      .btn-info {

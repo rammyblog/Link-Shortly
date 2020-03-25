@@ -43,10 +43,10 @@ export default function Footer() {
                     </div>
                     <div class="social-media">
                         <ul>
-                            <li><img src={FacebookLogo} /></li>
-                            <li><img src={InstagramLogo} /></li>
-                            <li><img src={TwitterLogo} /></li>
-                            <li><img src={PinterestLogo} /></li>
+                            <li><img src={FacebookLogo} alt='facebook-logo' /></li>
+                            <li><img src={InstagramLogo} alt='instagram-logo' /></li>
+                            <li><img src={TwitterLogo} alt='twitter-logo' /></li>
+                            <li><img src={PinterestLogo} alt='pintrest-logo'/></li>
                         </ul>
                     </div>
                 </div>

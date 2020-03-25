@@ -34,6 +34,7 @@ export const GlobalProvider = ({ children }) => {
                 });
             }
         ).catch(err => {
+            // eslint-disable-next-line
             err.response.status != '201' ?   
             dispatch({
                 type: 'ERROR_URL',

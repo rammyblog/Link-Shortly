@@ -5,7 +5,7 @@ export default function Card({ img, title, content, hr, extraStyles }) {
         <div>
             <div className={`card ${extraStyles}`}>
                 <div className="card-icon">
-                    <img src={img} />
+                    <img src={img} alt={title} />
                 </div>
                 <p className="card-title">{title}</p>
                 <p>{content}</p>
