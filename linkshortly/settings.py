@@ -72,13 +72,8 @@ WSGI_APPLICATION = 'linkshortly.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'linkshortly',
-        'USER': 'rammy',
-        'PASSWORD': 'timilehin3151',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -131,5 +126,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 if 'DATABASE_URL' in os.environ:
     import dj_database_url
-    
+
     DATABASES = {'default': dj_database_url.config()}
