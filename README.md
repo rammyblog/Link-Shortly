@@ -4,9 +4,9 @@ An attempt to take a challenge on [Frontend Mentor](https://www.frontendmentor.i
 
 An API was given for the url shortening, but I opted for building my own `API`
 
-## Design preview for the Job Listings coding challenge
+## Design preview for the URL shortening API landing page
 
-![Design preview for the Job Listings coding challenge](./src/assets/images/desktop-preview.jpg)
+![Design preview for the URL shortening API landing page](./src/assets/images/desktop-preview.jpg)
 
 This challange was solved using the follwoing technologies
 
