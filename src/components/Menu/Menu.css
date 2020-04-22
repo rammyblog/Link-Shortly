@@ -1,52 +1,45 @@
-nav{
-	display: grid;
-	grid-auto-flow: column; 
+nav {
+  display: grid;
+  grid-auto-flow: column;
 }
 
-
-
-.main-nav, .account-nav {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	font-weight: 700
-
+.main-nav,
+.account-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-weight: 700;
 }
 
-.main-nav li{
-	float: left;
-
+.main-nav li {
+  float: left;
+  margin-left: 20px;
 }
 
-.account-nav li{
-	float: right;
+.account-nav li {
+  float: right;
+  margin-left: 20px;
 }
 
-.main-nav{
-	display: flex;
-	gap: 20px;
-	align-items: center;
+.main-nav {
+  display: flex;
 
-
+  align-items: center;
 }
 
 .account-nav {
-	gap: 26px;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.mobile-image{
-	display: none;
+.mobile-image {
+  display: none;
 }
 
-
-@media (max-width: 700px ) {
-
-	.mobile-image{
-		display: block;
-	}
-
+@media (max-width: 700px) {
+  .mobile-image {
+    display: block;
   }
+}
