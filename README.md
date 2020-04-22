@@ -1,4 +1,4 @@
-# Frontend Mentor - Job Listings Challenge
+# Frontend Mentor - URL shortening API landing page
 
 An attempt to take a challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G)
 
